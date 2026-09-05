@@ -23,7 +23,11 @@ namespace Assignment_4
             #endregion
 
             #region Write a method called PrintWelcomeMessage that takes no parameters and prints  "Welcome to the Library!".Call it from Main.
-           // PrintWelcomeMessage();
+            // PrintWelcomeMessage();
+            #endregion
+
+            #region Write a method PrintBookTitle(string title) that prints "Book title: " + title. Call it with "Clean Code".
+           // PrintBookTitle("Clean Code");   
             #endregion
         }
         #region q3 class method 
@@ -33,5 +37,13 @@ namespace Assignment_4
 
         // }
         #endregion
+
+        #region q4 class method
+        //static void PrintBookTitle(string title)
+       // {
+          //  Console.WriteLine("Book title: " + title);
+        //}
+        #endregion
+
     }
 }
