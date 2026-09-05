@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Reflection;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment_4
@@ -68,12 +69,20 @@ namespace Assignment_4
             #endregion
 
             #region  Write a method PrintBookInfo(string title, int pages = 300) where pages is optional. Call it once with only a title, and once passing both a title and pages. 
-           // PrintBookInfo("Clean Code");
-           // PrintBookInfo("The Pragmatic Programmer", 352);
+            // PrintBookInfo("Clean Code");
+            // PrintBookInfo("The Pragmatic Programmer", 352);
 
 
 
             #endregion
+
+            #region Using the PrintBookInfo method from the question above, call it by naming the parameters, passing pages before title.
+            PrintBookInfo(pages: 250, title: "story");
+
+
+            #endregion
+
+
 
 
         }
@@ -138,11 +147,19 @@ namespace Assignment_4
         #endregion
 
         #region q10 class method
-       // static void PrintBookInfo(string title, int pages = 300)
+        // static void PrintBookInfo(string title, int pages = 300)
         //{
-         //   Console.WriteLine("Title: " + title + ", Pages: " + pages);
+        //   Console.WriteLine("Title: " + title + ", Pages: " + pages);
         //}
         #endregion
+
+        #region q11 class method
+        static void PrintBookInfo(string title, int pages = 300)
+        {
+            Console.WriteLine("Title: " + title + ", Pages: " + pages);
+        }
+        #endregion
+
 
     }
 }
