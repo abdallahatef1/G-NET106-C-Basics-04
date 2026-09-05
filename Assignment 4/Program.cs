@@ -33,7 +33,13 @@ namespace Assignment_4
             #region Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable int pages = 400; and print pages afterward. What do you expect to see, and why?
             //int pages = 400;
             //AddBonusPages(pages);  // 400 because the method does not change the original variable, it only changes a copy of it. pass by value 
-           // Console.WriteLine("pages after call = " + pages);
+            // Console.WriteLine("pages after call = " + pages);
+            #endregion
+
+            #region Write a method ApplyDiscount(double[] prices) that subtracts 5 from prices[0]. Call it   with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward.What do you expect tosee, and why?
+          //  double[] prices = { 25.5, 40.0 };
+           // ApplyDiscount(prices);
+           // Console.WriteLine(prices[0]); // 20.5 because the method changes the original array, not a copy of it. pass by reference
             #endregion
         }
         #region q3 class method 
@@ -50,10 +56,17 @@ namespace Assignment_4
         //  Console.WriteLine("Book title: " + title);
         //}
         #endregion
-         
+
         #region q5 class method
-       // static void AddBonusPages(int pages) {
-         //   pages += 50;
+        // static void AddBonusPages(int pages) {
+        //   pages += 50;
+        //}
+        #endregion
+
+        #region  q6 class method
+       // static void ApplyDiscount(double[] prices)
+       // {
+          //  prices[0] -= 5;
         //}
         #endregion
     }
