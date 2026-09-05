@@ -37,9 +37,15 @@ namespace Assignment_4
             #endregion
 
             #region Write a method ApplyDiscount(double[] prices) that subtracts 5 from prices[0]. Call it   with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward.What do you expect tosee, and why?
-          //  double[] prices = { 25.5, 40.0 };
-           // ApplyDiscount(prices);
-           // Console.WriteLine(prices[0]); // 20.5 because the method changes the original array, not a copy of it. pass by reference
+            //  double[] prices = { 25.5, 40.0 };
+            // ApplyDiscount(prices);
+            // Console.WriteLine(prices[0]); // 20.5 because the method changes the original array, not a copy of it. pass by reference
+            #endregion
+
+            #region Rewrite the method from question 5 as AddBonusPagesByRef(ref int pages) using ref. Call it and print pages afterward. How is the result different from question 5 ?
+           // int pages = 400;
+           // AddBonusPagesByRef(ref pages); // 450 because the method changes the original variable, not a copy of it. pass by reference
+           // Console.WriteLine("pages after call = " + pages);
             #endregion
         }
         #region q3 class method 
@@ -64,10 +70,17 @@ namespace Assignment_4
         #endregion
 
         #region  q6 class method
-       // static void ApplyDiscount(double[] prices)
-       // {
-          //  prices[0] -= 5;
+        // static void ApplyDiscount(double[] prices)
+        // {
+        //  prices[0] -= 5;
         //}
+        #endregion
+
+        #region q7 class method
+       // static void AddBonusPagesByRef(ref int pages)
+        //{
+         //   pages += 50;
+       // }
         #endregion
     }
 }
