@@ -1,4 +1,5 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System.Drawing;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment_4
 {
@@ -43,9 +44,16 @@ namespace Assignment_4
             #endregion
 
             #region Rewrite the method from question 5 as AddBonusPagesByRef(ref int pages) using ref. Call it and print pages afterward. How is the result different from question 5 ?
-           // int pages = 400;
-           // AddBonusPagesByRef(ref pages); // 450 because the method changes the original variable, not a copy of it. pass by reference
-           // Console.WriteLine("pages after call = " + pages);
+            // int pages = 400;
+            // AddBonusPagesByRef(ref pages); // 450 because the method changes the original variable, not a copy of it. pass by reference
+            // Console.WriteLine("pages after call = " + pages);
+            #endregion
+
+            #region Write a method ReplaceArray(ref double[] prices) that replaces prices entirely with a new array { 10.0, 12.5, 15.0 }.Call it with your prices array and print prices.Lengthafterward.
+           // double[] prices = { 25.5, 40.0, 33.75 };
+           // ReplaceArray(ref prices);
+            //Console.WriteLine("prices.Length after call = " + prices.Length);
+           // Console.WriteLine(prices[0]);// to check if the array has been replaced 
             #endregion
         }
         #region q3 class method 
@@ -77,10 +85,19 @@ namespace Assignment_4
         #endregion
 
         #region q7 class method
-       // static void AddBonusPagesByRef(ref int pages)
+        // static void AddBonusPagesByRef(ref int pages)
         //{
-         //   pages += 50;
-       // }
+        //   pages += 50;
+        // }
         #endregion
+
+        #region q8 class method
+       // static void ReplaceArray(ref double[] prices)
+       // {
+        //    prices = new double[] { 10.0, 12.5, 15.0 };
+       // }
+
+        #endregion
+
     }
 }
